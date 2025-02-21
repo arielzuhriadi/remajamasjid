@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Remaja Masjid</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <!-- navigation -->
+            <nav>
+                <div class="heading-logo">
+                    <img src="image/logo.png" alt="logo">
+                    <h1>Remaja Masjid Al-Fath</h1>
+                </div>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="about.html">Tentang kami</a></li>
+                    <li><a href="pengurus.html">Pengurus</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+
+                <!-- togle button -->
+                <div class="toogle-button" id="toogleButton">
+                    <div class="row-button"></div>
+                    <div class="row-button"></div>
+                    <div class="row-button"></div>
+                </div>
+                <!-- end toogle button -->
+            </nav>
+            <!-- end navigation -->
+        </div>
+    </header>
+
+    <!-- nav-phone -->
+    <div class="nav-phone" id="navPhone">
+        <ul class="ul-phone">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="about.html">Tentang kami</a></li>
+            <li><a href="pengurus.html">Pengurus</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </div>
+    <!-- end nav phone -->
+
+    <!-- content -->
+    <main id="content">
+        <div class="header-content">
+            <div class="card" id="text">
+                <h1>Remaja Masjid Al-fath</h1>
+                <p>Dusun Suhud Utara Desa Rintis Kec.Silangkitang Kab.Labuhanbatu Selatan</p>
+            </div>
+        </div>
+        <img src="image/fotbar1.jpeg" id="image" data-aos="zoom" data-aos-duration="3000" alt="foto">
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15vh;
+}
+
+/* card ketua */
+.ketua{
+    margin-bottom: 2vh;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.card-items {
+    border: 1px solid black;
+    width: 25%; 
+    height: auto;
+}
+.card-items>h3 {
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    clip-path: polygon(0 0, 60% 0, 75% 100%, 0% 100%);
+    border-bottom: 2px solid #00008b;
+}
+.card-items>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
+.card-items>h4{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #00008b;
+}
+/* end card ketua */
+
+/* card staf remaja */
+.staf{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+.card-staf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.card-items-staf {
+    border: 1px solid black;
+    width: 25%; 
+    height: auto;
+}
+.card-items-staf>h3 {
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    clip-path: polygon(0 0, 60% 0, 75% 100%, 0% 100%);
+    border-bottom: 2px solid #00008b;
+}
+.card-items-staf>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
+.card-items-staf>h4{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #00008b;
+}
+/* end card staf remaja */
+
+
+
+
+
+
+
+/* media query */
+@media screen and (min-width:300px) and (max-width:600px) {
+    #content{
+        width: 95%;
+    }
+    /* card ketua */
+    .card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card-items {
+        border: 1px solid black;
+        width: 100%;
+    }
+    /* end card ketua */
+    
+    /* card staf remaja */
+    .card-staf {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card-items-staf {
+        border: 1px solid black;
+        width: 100%;
+    }
+    /* end card staf remaja */
+}
+
+@media screen and (min-width:600px) and (max-width: 900px) { 
+    #content{
+        width: 95%;
+    }
+    /* card ketua */
+    .card-items {
+        border: 1px solid black;
+        width: 40%;
+    }
+    /* end card ketua */
+    
+    /* card staf remaja */
+    .card-items-staf {
+        border: 1px solid black;
+        width: 40%;
+    }
+    /* end card staf remaja */
+ } 

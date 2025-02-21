@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15vh;
+}
+
+.content-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+
+}
+
+.left{
+    width: 70%;
+}
+
+
+/* card kegiatan */
+.card {
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+
+.card-items {
+    width: 45%;
+    border: 1px solid black;
+}
+
+.top {
+    position: absolute;
+    font-style: italic;
+    background-color: darkblue;
+    color: white;
+    border-bottom-right-radius: 20px;
+}
+
+.card-items>img {
+    width: 100%;
+}
+
+.card-items>p {
+    padding: 10px;
+    text-align: justify;
+}
+
+/* end card kegiatan */
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+}
+.right>h2{
+    text-align: center;
+}
+
+/* .card{} */
+.card-list {
+    display: flex;
+    margin-bottom: 2vh;
+    flex-direction: column;
+}
+
+.card-list>img {
+    width: 100%;
+}
+
+.card-list>a {
+    background-color: darkblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.card-list>a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.card-list>p {
+    padding: 5px;
+}
+
+
+/* media query */
+@media screen and (max-width: 600px) {
+    #content {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 15vh;
+    }
+
+    .content-fluid {
+        margin-bottom: 5vh;
+        flex-direction: column;
+
+    }
+
+    .left{
+        width: 100%;
+    }
+    /* card kegiatan */
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card-items {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .card-items>img {
+        width: 100%;
+    }
+
+    .card-items>p {
+        padding: 10px;
+        text-align: justify;
+    }
+
+
+
+    .right {
+        margin-top: 5vh;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 900px) {
+    #content {
+        width: 95%;
+    }
+
+    /* card kegiatan */
+    .card {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card-items {
+        width: 45%;
+        border: 1px solid black;
+    }
+}
