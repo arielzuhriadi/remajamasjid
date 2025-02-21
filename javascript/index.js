@@ -6,7 +6,7 @@ setTimeout(() => {
     image.src = './image/fotbar2.jpeg';
 }, 4000);
 setTimeout(() => {
-    image.src = './image/fotbar3.jpg';
+    image.src = './image/fotbar3.JPG';
 }, 8000);
 setTimeout(() => {
     image.src = './image/lomba2.jpg';
